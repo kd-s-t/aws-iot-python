@@ -4,10 +4,10 @@ import json
 
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERT, PATH_TO_KEY, PATH_TO_ROOT, MESSAGE, TOPIC, and RANGE
 ENDPOINT = "a2b0xwckvjuafw-ats.iot.us-east-2.amazonaws.com"
-CLIENT_ID = "rasppi4"
-PATH_TO_CERT = "certs/certificate.pem.crt"
-PATH_TO_KEY = "certs/private.pem.key"
-PATH_TO_ROOT = "certs/root-ca.pem"
+CLIENT_ID = "test6"
+PATH_TO_CERT = "certs/06f142bc14-certificate.pem.crt"
+PATH_TO_KEY = "certs/06f142bc14-private.pem.key"
+PATH_TO_ROOT = "certs/AmazonRootCA1.pem"
 
 pin = 17
 GPIO.setwarnings(True)
@@ -38,6 +38,7 @@ class Main:
         def online(self, params, packet):
             print('Received message from React Native')
             print('Topic: '+packet.topic)
+            print(packet.payload)
             myMQTTClient.publish(
                 topic="smartbank/connection",
                 QoS=0,
