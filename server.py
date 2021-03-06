@@ -1,5 +1,5 @@
 from time import sleep
-import controllers.Main as en
+import controllers.main as en
 
 n = en.Main()
 n.subscribe()

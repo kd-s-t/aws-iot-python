@@ -5,11 +5,11 @@ import json
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERT, PATH_TO_KEY, PATH_TO_ROOT, MESSAGE, TOPIC, and RANGE
 ENDPOINT = "a2b0xwckvjuafw-ats.iot.us-east-2.amazonaws.com"
 CLIENT_ID = "test6"
-PATH_TO_CERT = "certs/06f142bc14-certificate.pem.crt"
-PATH_TO_KEY = "certs/06f142bc14-private.pem.key"
+PATH_TO_CERT = "certs/4eec5f668e-certificate.pem.crt"
+PATH_TO_KEY = "certs/4eec5f668e-private.pem.key"
 PATH_TO_ROOT = "certs/AmazonRootCA1.pem"
 
-pin = 17
+pin = 18
 GPIO.setwarnings(True)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pin, GPIO.OUT)
