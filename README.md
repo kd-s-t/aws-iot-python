@@ -19,4 +19,4 @@ Green Wire: Pin 18
 
 ## Youtube Tutorial  
 By Following this Tutorial    
-[Youtube Tutorial Soon]   
+https://youtu.be/917QGloMW0o  
